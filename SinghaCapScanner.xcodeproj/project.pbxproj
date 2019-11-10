@@ -13,9 +13,12 @@
 		70916AB523784F6400ECFB9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70916AB323784F6400ECFB9F /* Main.storyboard */; };
 		70916AB723784F6600ECFB9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70916AB623784F6600ECFB9F /* Assets.xcassets */; };
 		70916ABA23784F6600ECFB9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70916AB823784F6600ECFB9F /* LaunchScreen.storyboard */; };
+		99C16110603D4AB12949F473 /* Pods_SinghaCapScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655D1F331194362F215368F7 /* Pods_SinghaCapScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39235629758A75CCE8A968C9 /* Pods-SinghaCapScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinghaCapScanner.debug.xcconfig"; path = "Target Support Files/Pods-SinghaCapScanner/Pods-SinghaCapScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		655D1F331194362F215368F7 /* Pods_SinghaCapScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinghaCapScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70916AAA23784F6400ECFB9F /* SinghaCapScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinghaCapScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70916AAD23784F6400ECFB9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70916AAF23784F6400ECFB9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		70916AB623784F6600ECFB9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70916AB923784F6600ECFB9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70916ABB23784F6600ECFB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87668789A9F4BA88367C2AE /* Pods-SinghaCapScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinghaCapScanner.release.xcconfig"; path = "Target Support Files/Pods-SinghaCapScanner/Pods-SinghaCapScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C16110603D4AB12949F473 /* Pods_SinghaCapScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3194D9AC9842AB5206974DA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39235629758A75CCE8A968C9 /* Pods-SinghaCapScanner.debug.xcconfig */,
+				E87668789A9F4BA88367C2AE /* Pods-SinghaCapScanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		70916AA123784F6400ECFB9F = {
 			isa = PBXGroup;
 			children = (
 				70916AAC23784F6400ECFB9F /* SinghaCapScanner */,
 				70916AAB23784F6400ECFB9F /* Products */,
+				3194D9AC9842AB5206974DA9 /* Pods */,
+				F6EC6404FCF5F7209A94027B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = SinghaCapScanner;
 			sourceTree = "<group>";
 		};
+		F6EC6404FCF5F7209A94027B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655D1F331194362F215368F7 /* Pods_SinghaCapScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70916ABE23784F6600ECFB9F /* Build configuration list for PBXNativeTarget "SinghaCapScanner" */;
 			buildPhases = (
+				A88B72474CCE733CAFEE7C12 /* [CP] Check Pods Manifest.lock */,
 				70916AA623784F6400ECFB9F /* Sources */,
 				70916AA723784F6400ECFB9F /* Frameworks */,
 				70916AA823784F6400ECFB9F /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A88B72474CCE733CAFEE7C12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SinghaCapScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70916AA623784F6400ECFB9F /* Sources */ = {
@@ -282,6 +332,7 @@
 		};
 		70916ABF23784F6600ECFB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39235629758A75CCE8A968C9 /* Pods-SinghaCapScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +345,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = abchamp.SinghaCapScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		70916AC023784F6600ECFB9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87668789A9F4BA88367C2AE /* Pods-SinghaCapScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = abchamp.SinghaCapScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
